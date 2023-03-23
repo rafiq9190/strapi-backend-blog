@@ -27,8 +27,8 @@
     "template": "@strapi/template-blog@1.0.0"
   },
   "engines": {
-    "node": ">=14.19.1 <=18.x.x",
-    "npm": ">=6.0.0"
+    "node": "16.8.0",
+    "npm": "7.21.0"
   },
   "license": "MIT"
 }
