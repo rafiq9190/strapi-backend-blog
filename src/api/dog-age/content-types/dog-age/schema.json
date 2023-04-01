@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "dog_ages",
+  "info": {
+    "singularName": "dog-age",
+    "pluralName": "dog-ages",
+    "displayName": "dogAge"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}
