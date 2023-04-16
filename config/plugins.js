@@ -23,7 +23,7 @@ module.exports = ({ env }) => ({
       "Link",
       "BulletedList",
       "NumberedList",
-      "ImageUpload",
+      "Image",
     ],
     toolbar: [
       "heading",
@@ -40,6 +40,21 @@ module.exports = ({ env }) => ({
       "undo",
       "redo",
     ],
+    mediaEmbed: {
+      previewsInData: true,
+    },
+    image: {
+      upload: {
+        types: ["jpeg", "png", "gif", "svg+xml", "webp"],
+        provider: "cloudinary",
+        action: "upload",
+        // Add any additional options as needed
+        // For example
+      }
+    },
+    imageResize: {
+      handleSize: 8 // Set the handle size to 8 pixels
+    }
   },
   // ...
 });
