@@ -15,7 +15,10 @@ module.exports = ({ env }) => ({
       },
     },
   },
+
+
   editor: {
+
     plugins: [
       "Heading",
       "Bold",
@@ -24,6 +27,8 @@ module.exports = ({ env }) => ({
       "BulletedList",
       "NumberedList",
       "Image",
+      "Image",
+      "ImageResize",
     ],
     toolbar: [
       "heading",
@@ -42,6 +47,7 @@ module.exports = ({ env }) => ({
     ],
     mediaEmbed: {
       previewsInData: true,
+      allowedContent: true
     },
     image: {
       upload: {
@@ -52,9 +58,10 @@ module.exports = ({ env }) => ({
         // For example
       }
     },
-    imageResize: {
-      handleSize: 8 // Set the handle size to 8 pixels
-    }
+    imageResize_handleSize: {
+      width: 100,
+      height: 100,
+    },
   },
   // ...
 });
